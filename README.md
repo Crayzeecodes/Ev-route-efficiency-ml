@@ -50,7 +50,10 @@ Model Chosen: Random Forest Regressor
 
 Metric	Value
 R² Score	0.9756
+
 Mean Absolute Error (MAE)	2.7179
+
 Root Mean Squared Error (RMSE)	5.5094
+
 
 The Random Forest model significantly outperforms Linear Regression (R² ≈ 0.5157), making it highly reliable for predicting SOC drop along routes.
