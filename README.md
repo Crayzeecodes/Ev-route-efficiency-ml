@@ -42,7 +42,7 @@ Battery Current (A)
 
 Battery SOC (%)
 
-Dataset link: [Add your dataset link here]
+Dataset link: https://bitbucket.org/datarepo/eved-dataset/src/main/data/eVED.zip
 
 Model & Performance
 
