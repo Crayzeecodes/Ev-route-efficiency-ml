@@ -1,59 +1,81 @@
-# Ev-route-efficiency-ml
-EV Route Optimization using Machine Learning
-Problem Statement
+# EV Route Efficiency ML 🚗⚡
 
-Electric vehicle (EV) owners often face uncertainty in estimating battery consumption for a planned route. The challenge is to predict the battery SOC (State of Charge) drop along a route, considering factors like speed, elevation, distance, temperature, battery voltage, and current. This allows EV users to choose routes that optimize energy efficiency and avoid unexpected mid-route recharging.
+Predict battery consumption for electric vehicles (EVs) along a planned route to help users optimize energy efficiency and avoid unexpected mid-route recharging.
 
-Approach / Solution
+---
+
+## 📝 Problem Statement
+
+EV owners often face uncertainty in estimating battery consumption for a planned trip. The challenge is to **predict the battery SOC (State of Charge) drop** along a route, considering factors like:
+
+- Speed  
+- Elevation  
+- Distance  
+- Temperature  
+- Battery Voltage & Current  
+
+This allows EV users to choose **battery-efficient routes** and plan charging stops proactively.
+
+---
+
+## 🛠️ Approach / Solution
 
 We approached the problem in the following steps:
 
-Data Collection & Cleaning
-Collected EV trip data including speed, elevation, distance, battery parameters, temperature, and other environmental features. Removed missing values and outliers to prepare a clean dataset.
+### 1️⃣ Data Collection & Cleaning
+- Collected EV trip data including speed, elevation, distance, battery parameters, temperature, and other environmental features.  
+- Removed missing values and outliers to prepare a **clean dataset** (`final_dataset_ev.csv`).
 
-Exploratory Data Analysis (EDA)
-Visualized feature distributions and relationships with battery SOC to understand key drivers of energy consumption.
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Visualized feature distributions and correlations with battery SOC.  
+- Identified key drivers of energy consumption.
 
-Model Selection
-Compared multiple regression models: Linear Regression, Decision Tree, and Random Forest.
-Based on performance metrics, Random Forest Regressor was chosen as the best model.
+### 3️⃣ Model Selection
+- Compared multiple regression models: **Linear Regression**, **Decision Tree**, and **Random Forest**.  
+- **Random Forest Regressor** outperformed others based on accuracy metrics.
 
-Model Training & Evaluation
-Trained the Random Forest model on 80% of the dataset and tested on 20%. Evaluated performance using R² Score, MAE, and RMSE.
+### 4️⃣ Model Training & Evaluation
+- Split dataset: 80% training, 20% testing.  
+- Evaluated using **R² Score, MAE, and RMSE**.  
+- Saved trained model for future route simulations.
 
-Route SOC Prediction
-Developed a route simulation that predicts SOC drop along a given route using the trained model, taking into account user-provided battery SOC, temperature, and capacity.
+---
 
-Dataset:
+## 📊 Dataset
 
-The dataset used is the cleaned EV trip dataset, containing features like:
+**Features Used:**
 
-Speed (km/h)
+- Speed (km/h)  
+- Elevation (m)  
+- Distance (m)  
+- Temperature (°C)  
+- Battery Voltage (V)  
+- Battery Current (A)  
+- Battery SOC (%)
 
-Elevation (m)
+**Dataset Link:** [EVED Dataset](https://bitbucket.org/datarepo/eved-dataset/src/main/data/eVED.zip)
 
-Distance (m)
+---
 
-Temperature (°C)
+## 💡 Model & Performance
 
-Battery Voltage (V)
+**Model Chosen:** Random Forest Regressor
 
-Battery Current (A)
+| Metric                     | Value   |
+|-----------------------------|---------|
+| R² Score                    | 0.9756  |
+| Mean Absolute Error (MAE)   | 2.7179  |
+| Root Mean Squared Error (RMSE) | 5.5094 |
 
-Battery SOC (%)
+> ⚡ Random Forest significantly outperforms Linear Regression (R² ≈ 0.5157), making it highly reliable for SOC predictions along routes.
 
-Dataset link: https://bitbucket.org/datarepo/eved-dataset/src/main/data/eVED.zip
+---
 
-Model & Performance
+## ✨ Improvisations / Enhancements
 
-Model Chosen: Random Forest Regressor
+- **NaN Handling & Dataset Cleaning:** Removed missing values and outliers for improved model performance.  
+- **Feature Engineering:** Added battery parameters and environmental factors (Temperature, Slope, Humidity) for realistic predictions.  
+- **Model Upgrade:** Replaced simple Linear Regression with **Random Forest**, boosting accuracy dramatically.  
 
-Metric	Value
-R² Score	0.9756
+---
 
-Mean Absolute Error (MAE)	2.7179
-
-Root Mean Squared Error (RMSE)	5.5094
-
-
-The Random Forest model significantly outperforms Linear Regression (R² ≈ 0.5157), making it highly reliable for predicting SOC drop along routes.
