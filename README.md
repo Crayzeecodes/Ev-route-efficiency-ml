@@ -67,7 +67,13 @@ We approached the problem in the following steps:
 | Mean Absolute Error (MAE)   | 2.7179  |
 | Root Mean Squared Error (RMSE) | 5.5094 |
 
+## Model Comparison
+![Comparison of Models](images/Comparison_Models.png)
+
 > ⚡ Random Forest significantly outperforms Linear Regression (R² ≈ 0.5157), making it highly reliable for SOC predictions along routes.
+
+## Actual vs Predicted SOC
+![Actual vs Predicted SOC](images/ActualVsPredicted.png)
 
 ---
 
