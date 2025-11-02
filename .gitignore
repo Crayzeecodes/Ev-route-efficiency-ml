@@ -1,0 +1,28 @@
+# Virtual environments
+venv/
+.env
+*.env
+
+# Python cache and logs
+__pycache__/
+*.pyc
+*.log
+
+# Model or large binary files (if needed)
+*.pkl
+*.h5
+*.joblib
+
+# OS junk
+.DS_Store
+notebooks/cache/
+*.json
+
+# Jupyter checkpoint directories
+.ipynb_checkpoints/
+notebooks/cache/
+
+
+# Optional: If you generate data locally (not raw training data)
+data/
+.env
