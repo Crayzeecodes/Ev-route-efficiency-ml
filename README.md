@@ -24,7 +24,7 @@ Trained the Random Forest model on 80% of the dataset and tested on 20%. Evaluat
 Route SOC Prediction
 Developed a route simulation that predicts SOC drop along a given route using the trained model, taking into account user-provided battery SOC, temperature, and capacity.
 
-Dataset
+Dataset:
 
 The dataset used is the cleaned EV trip dataset, containing features like:
 
