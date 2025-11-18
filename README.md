@@ -132,7 +132,7 @@ Driving Mode, Road Type, Traffic Condition, Weather Condition
 * **Residuals Histogram** — confirms low bias and small prediction errors.
 * **Feature Importance Chart** — highlights factors affecting EV energy consumption.
 
-!(images1.png)
+![ALt](images1.png)
 
 ---
 
