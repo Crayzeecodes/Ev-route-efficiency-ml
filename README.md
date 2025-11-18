@@ -1,6 +1,4 @@
-Got it. I’ve removed the **Top 10 Features** section and added a dedicated **Output / Screenshots** section. I’ve also polished the Markdown so it’s **GitHub-friendly**, visually clear, and professional:
 
----
 
 # GROUTE: Intelligent EV Route Energy Assistant 🚗⚡
 
