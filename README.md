@@ -132,7 +132,10 @@ Driving Mode, Road Type, Traffic Condition, Weather Condition
 * **Residuals Histogram** — confirms low bias and small prediction errors.
 * **Feature Importance Chart** — highlights factors affecting EV energy consumption.
 
-![ALt](Ev-route-efficiency-ml/images1.png)
+![Alt](images/ActualVsPredicted.png)
+
+
+![ALt](/images/residuals.png)
 
 ---
 
@@ -161,7 +164,11 @@ GROUTE provides EV-aware, battery-intelligent navigation, filling the gap left b
 
 ## 🖼️ Output / Screenshots
 
-> *(Attach screenshots of Predicted vs Actual Energy Consumption, Residuals Histogram, Feature Importance, and the chat-based interface here.)*
+![Alt](images/output1.png)
+
+![Alt](images/output2.png)
+
+
 
 ---
 
@@ -180,4 +187,4 @@ GROUTE builds a strong foundation for **next-generation intelligent EV navigatio
 
 
 
-Do you want me to do that?
+Zeeshan Khan
